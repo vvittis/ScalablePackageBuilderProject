@@ -1,102 +1,103 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <!-- <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/> -->
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <!-- <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/> -->
+    <meta charset="utf-8">
+    <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+    <!-- Replace the content tag with appropriate information -->
+    <!-- <meta name="description" content="DESCRIPTION META TAG">
+    <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+    <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+    <meta property="og:url" content="URL OF THE WEBSITE"/> -->
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+    <!-- <meta property="og:image" content="static/image/your_banner_image.png" />
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/> -->
 
 
-  <!-- <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG"> -->
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <!-- <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
-  <meta name="twitter:card" content="summary_large_image"> -->
-  <!-- Keywords for your paper to be indexed by-->
-  <!-- <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
-  <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <!-- <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+    <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG"> -->
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+    <!-- <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+    <meta name="twitter:card" content="summary_large_image"> -->
+    <!-- Keywords for your paper to be indexed by-->
+    <!-- <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 
 
-  <title>ML Model Maintenance</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
+    <title>Incremental Package Maintenance</title>
+    <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+          rel="stylesheet">
 
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="static/css/bulma.min.css">
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
-  <script src="static/js/bulma-slider.min.js"></script>
-  <script src="static/js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script defer src="static/js/fontawesome.all.min.js"></script>
+    <script src="static/js/bulma-carousel.min.js"></script>
+    <script src="static/js/bulma-slider.min.js"></script>
+    <script src="static/js/index.js"></script>
 </head>
 <body>
 
 
-  <section class="hero">
+<section class="hero">
     <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Predictive ML Model Maintenance</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a href="https://www.linkedin.com/in/amanmalali/" target="_blank">Aman Malali</a>,</span>
-                <span class="author-block">
-                  <a href="https://people.cs.umass.edu/~phaas?_gl=1*1d04m0n*_ga*MTkzNTQ5NzQ2Ni4xNjYzNjE0NDA3*_ga_21RLS0L7EB*MTY3Nzc0Mjg3MC4yOS4wLjE2Nzc3NDI4NzAuMC4wLjA.&_ga=2.30932287.1444648391.1677742871-1935497466.1663614407" target="_blank">Peter Haas</a>,</span>
-                  <span class="author-block">
-                    <a href="https://www.lix.polytechnique.fr/~yanlei.diao/" target="_blank">Yanlei Diao</a>
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+                    <h1 class="title is-1 publication-title">Incremental Package Maintenance</h1>
+                    <div class="is-size-5 publication-authors">
+                        <!-- Paper authors -->
+                        <span class="author-block">
+                <a href="https://vvittis.github.io" target="_blank">Vasileios Vittis</a>,</span>
+                        <span class="author-block">
+                  <a href="https://people.cs.umass.edu/~phaas?_gl=1*1d04m0n*_ga*MTkzNTQ5NzQ2Ni4xNjYzNjE0NDA3*_ga_21RLS0L7EB*MTY3Nzc0Mjg3MC4yOS4wLjE2Nzc3NDI4NzAuMC4wLjA.&_ga=2.30932287.1444648391.1677742871-1935497466.1663614407"
+                     target="_blank">Peter Haas</a>,</span>
+                        <span class="author-block">
+                    <a href="https://people.cs.umass.edu/~ameli/" target="_blank">Alexandra Meliou</a>
                   </span>
-                  </div>
+                    </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">DREAM Lab<br>University of Massachusetts Amherst</span>
-                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
-                  </div>
+                    <div class="is-size-5 publication-authors">
+                        <span class="author-block">DREAM Lab<br>University of Massachusetts Amherst</span>
+                        <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+                    </div>
 
-                  <div class="column has-text-centered">
-                    <!-- <div class="publication-links"> -->
-                         <!-- Arxiv PDF link -->
-                      <!-- <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span> -->
+                    <div class="column has-text-centered">
+                        <!-- <div class="publication-links"> -->
+                        <!-- Arxiv PDF link -->
+                        <!-- <span class="link-block">
+                          <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                          class="external-link button is-normal is-rounded is-dark">
+                          <span class="icon">
+                            <i class="fas fa-file-pdf"></i>
+                          </span>
+                          <span>Paper</span>
+                        </a>
+                      </span> -->
 
-                    <!-- Supplementary PDF link -->
-                    <!-- <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span> -->
+                        <!-- Supplementary PDF link -->
+                        <!-- <span class="link-block">
+                          <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                          class="external-link button is-normal is-rounded is-dark">
+                          <span class="icon">
+                            <i class="fas fa-file-pdf"></i>
+                          </span>
+                          <span>Supplementary</span>
+                        </a>
+                      </span> -->
 
-                  <!-- Github link -->
-                  <span class="link-block">
+                        <!-- Github link -->
+                        <span class="link-block">
                     <a href="https://github.com/model_maintenance" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
+                       class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
@@ -104,22 +105,22 @@
                   </a>
                 </span>
 
-                <!-- ArXiv abstract Link -->
-                <!-- <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span> -->
-                  <!-- <span>arXiv</span> -->
-                <!-- </a>
-              </span> -->
+                        <!-- ArXiv abstract Link -->
+                        <!-- <span class="link-block">
+                          <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                          class="external-link button is-normal is-rounded is-dark">
+                          <span class="icon">
+                            <i class="ai ai-arxiv"></i>
+                          </span> -->
+                        <!-- <span>arXiv</span> -->
+                        <!-- </a>
+                      </span> -->
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
+    </div>
 </section>
 
 
@@ -141,82 +142,87 @@
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Machine learning (ML) models are used in a multitude of real world applications. 
-            These models are usually created assuming that the datasets they are trained upon are representative of the data they will encounter when deployed in production. A change in the underlying distribution of the features that an ML model relies upon can have disastrous consequences. These data distribution changes can be hard to spot and their impact on the quality of the resulting ML model predictions can be even harder to determine. Current model maintenance pipelines for dealing with this type of ``data drift’’ typically either wait until ML model errors are observed before taking action or retrain the model periodically according to some ad hoc schedule. The former approach can incur serious damage by the time errors are observed and corrective action is taken, and the latter approach can either waste resources if retraining is too frequent or incur damage if retraining is not frequent enough. Our current research aims at developing a model maintenance pipeline that is predictive, preemptively re-training models before excessive model losses occur while minimizing false alarms. The pipeline has multiple components: A drift detector that identifies when incoming feature vectors start straying away from the original feature distribution; a sensitivity model that predicts ML model losses for the drifted data points; a retraining policy that determines when to trigger the retraining of the ML model based on predicted future losses; and appropriate data synopses that can be used for rapid model retraining.
-          </p>
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Abstract</h2>
+                <div class="content has-text-justified">
+                    <p>
+                        Decision makers in a broad range of domains, such as finance, transportation, manufacturing, and healthcare,
+                        often need to derive optimal decisions given a set of constraints and objectives. For many important problems, this decision making process can be formulated as selecting a set
+                        of tuples (a package) in a relational database that collectively satisfy a set of linear constraints and maximize or minimize a linear objective function. Prior work1 has
+                        developed efficient algorithms for solving such “package queries”. Our research focuses on incremental maintenance of package-query solutions under a stream of data insertions.
+                        In this dynamic setting, naively recomputing a package from scratch, when small delta changes are present, makes maintaining results up-to-date computationally tedious and
+                        prohibitively expensive for real-time and near-real-time applications. Our preliminary work contributes two baseline Incremental Package Maintenance (IPM) algorithms,
+                        approaching the problem both greedily (Greedy IPM) and heuristically, based on prior solutions (Accumulative IPM). Initial experimental results show orders-of-magnitude greater
+                        runtime performance in large datasets relative to naive recomputation, while maintaining an experimentally robust approximation bound on the quality of the solution.
+                        We intend to extend our results to further improve on our baseline algorithms as well as to handle data deletions and changes in the package query itself.
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </section>
 <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/mlm_system.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Overall system design of the proposed predictive model maintenance pipeline
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/mlm_train.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Describes how each of the components of the pipeline will be trained
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/mlm_inference.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Describes how the pipeline would function during deployment
-       </h2>
-     </div>
-     <!-- <div class="item">
-      Your image here
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2> -->
-    </div>
-  </div>
-</div>
-</div>
-</section>
+<!--&lt;!&ndash; Image carousel &ndash;&gt;-->
+<!--<section class="hero is-small">-->
+<!--    <div class="hero-body">-->
+<!--        <div class="container">-->
+<!--            <div id="results-carousel" class="carousel results-carousel">-->
+<!--                <div class="item">-->
+<!--                    &lt;!&ndash; Your image here &ndash;&gt;-->
+<!--                    <img src="static/images/mlm_system.png" alt="MY ALT TEXT"/>-->
+<!--                    <h2 class="subtitle has-text-centered">-->
+<!--                        Overall system design of the proposed predictive model maintenance pipeline-->
+<!--                    </h2>-->
+<!--                </div>-->
+<!--                <div class="item">-->
+<!--                    &lt;!&ndash; Your image here &ndash;&gt;-->
+<!--                    <img src="static/images/mlm_train.png" alt="MY ALT TEXT"/>-->
+<!--                    <h2 class="subtitle has-text-centered">-->
+<!--                        Describes how each of the components of the pipeline will be trained-->
+<!--                    </h2>-->
+<!--                </div>-->
+<!--                <div class="item">-->
+<!--                    &lt;!&ndash; Your image here &ndash;&gt;-->
+<!--                    <img src="static/images/mlm_inference.png" alt="MY ALT TEXT"/>-->
+<!--                    <h2 class="subtitle has-text-centered">-->
+<!--                        Describes how the pipeline would function during deployment-->
+<!--                    </h2>-->
+<!--                </div>-->
+<!--                &lt;!&ndash; <div class="item">-->
+<!--                 Your image here-->
+<!--                 <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>-->
+<!--                 <h2 class="subtitle has-text-centered">-->
+<!--                   Fourth image description.-->
+<!--                 </h2> &ndash;&gt;-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    </div>-->
+<!--</section>-->
 <!-- End image carousel -->
-
-
 
 
 <!-- Youtube video -->
 <!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container"> -->
-      <!-- Paper video. -->
-      <!-- <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video"> -->
-            <!-- Youtube embed code here -->
-            <!-- <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<!-- Paper video. -->
+<!-- <h2 class="title is-3">Video Presentation</h2>
+<div class="columns is-centered has-text-centered">
+  <div class="column is-four-fifths">
+
+    <div class="publication-video"> -->
+<!-- Youtube embed code here -->
+<!-- <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+</div>
+</div>
+</div>
+</div>
 </section> -->
 <!-- End youtube video -->
 
@@ -252,10 +258,6 @@
 <!-- End video carousel -->
 
 
-
-
-
-
 <!-- Paper poster -->
 <!-- <section class="hero is-small is-light">
   <div class="hero-body">
@@ -272,38 +274,40 @@
 
 
 <!--BibTex citation -->
-  <!-- <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
-    </div>
+<!-- <section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>BibTex Code Here</code></pre>
+  </div>
 </section> -->
 <!--End BibTex citation -->
 
 
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
+<footer class="footer">
+    <div class="container">
+        <div class="columns is-centered">
+            <div class="column is-8">
+                <div class="content">
 
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.
-            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
+                    <p>
+                        This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.
+                        You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"
+                                                                                                                                                                        href="http://creativecommons.org/licenses/by-sa/4.0/"
+                                                                                                                                                                        target="_blank">Creative
+                        Commons Attribution-ShareAlike 4.0 International License</a>.
+                    </p>
 
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </footer>
 
 <!-- Statcounter tracking code -->
-  
+
 <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
 
-    <!-- End of Statcounter Code -->
+<!-- End of Statcounter Code -->
 
-  </body>
-  </html>
+</body>
+</html>
