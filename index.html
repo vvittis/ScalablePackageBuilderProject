@@ -2,6 +2,19 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VHN1XTKVDF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-VHN1XTKVDF');
+    </script>
     <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
     <!-- Replace the content tag with appropriate information -->
     <!-- <meta name="description" content="DESCRIPTION META TAG">
@@ -57,7 +70,8 @@
                         <!-- Paper authors -->
                         <span class="author-block"><a href="https://vvittis.github.io" target="_blank">Vasileios Vittis*</a>,</span>
                         <span class="author-block"><a href="http://azza.azurewebsites.net" target="_blank">Azza Abouzied &#9624;</a>,</span>
-                        <span class="author-block"><a href="https://people.cs.umass.edu/~phaas?_gl=1*1d04m0n*_ga*MTkzNTQ5NzQ2Ni4xNjYzNjE0NDA3*_ga_21RLS0L7EB*MTY3Nzc0Mjg3MC4yOS4wLjE2Nzc3NDI4NzAuMC4wLjA.&_ga=2.30932287.1444648391.1677742871-1935497466.1663614407"
+                        <span class="author-block"><a
+                                href="https://people.cs.umass.edu/~phaas?_gl=1*1d04m0n*_ga*MTkzNTQ5NzQ2Ni4xNjYzNjE0NDA3*_ga_21RLS0L7EB*MTY3Nzc0Mjg3MC4yOS4wLjE2Nzc3NDI4NzAuMC4wLjA.&_ga=2.30932287.1444648391.1677742871-1935497466.1663614407"
                                 target="_blank">Peter Haas*</a>,</span>
                         <span class="author-block"><a href="https://people.cs.umass.edu/~ameli/" target="_blank">Alexandra Meliou*</a></span>
                     </div>
@@ -141,13 +155,17 @@
                     <p>
                         Decision makers in a broad range of domains, such as finance, transportation, manufacturing, and healthcare,
                         often need to derive optimal decisions given a set of constraints and objectives. For many important problems, this decision making process can be formulated as selecting a set
-                        of tuples (a package) in a relational database that collectively satisfy a set of linear constraints and maximize or minimize a linear objective function. Prior work1 has
+                        of tuples (a package) in a relational database that collectively satisfy a set of linear constraints and maximize or minimize a linear objective function. Prior work [1] has
                         developed efficient algorithms for solving such “package queries”. Our research focuses on incremental maintenance of package-query solutions under a stream of data insertions.
                         In this dynamic setting, naively recomputing a package from scratch, when small delta changes are present, makes maintaining results up-to-date computationally tedious and
                         prohibitively expensive for real-time and near-real-time applications. Our preliminary work contributes two baseline Incremental Package Maintenance (IPM) algorithms,
                         approaching the problem both greedily (Greedy IPM) and heuristically, based on prior solutions (Accumulative IPM). Initial experimental results show orders-of-magnitude greater
                         runtime performance in large datasets relative to naive recomputation, while maintaining an experimentally robust approximation bound on the quality of the solution.
                         We intend to extend our results to further improve on our baseline algorithms as well as to handle data deletions and changes in the package query itself.
+
+                        <br>
+                        <br>
+                        [1] Scalable computation of high-order optimization queries, M.Brucato, A.Abouzied, A.Meliou (2019)
                     </p>
                 </div>
             </div>
@@ -155,7 +173,7 @@
     </div>
 </section>
 <!-- End paper abstract -->
-<embed src="documents/NEDB%20Poster.pdf" width="100%" height="1200px" />
+<embed src="documents/NEDB%20Poster.svg" width="100%" height="auto"/>
 
 <!--&lt;!&ndash; Image carousel &ndash;&gt;-->
 <!--<section class="hero is-small">-->
@@ -285,7 +303,11 @@
                         You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"
                                                                                                                                                                         href="http://creativecommons.org/licenses/by-sa/4.0/"
                                                                                                                                                                         target="_blank">Creative
-                        Commons Attribution-ShareAlike 4.0 International License</a>.
+                        Commons Attribution-ShareAlike 4.0 International License
+
+                    </a>.
+                        <br>
+                        <strong>This page uses Google Analytics.</strong>
                     </p>
 
                 </div>
