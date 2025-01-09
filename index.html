@@ -152,29 +152,30 @@
             <div class="column is-four-fifths">
                 <h2 class="title is-3">Abstract</h2>
                 <div class="content has-text-justified">
+                   <p>
+                        Decision-makers in various domains, such as finance, transportation, manufacturing, and healthcare, 
+                        often need to make optimal decisions based on constraints and objectives. Many such problems can be 
+                        solved by selecting a set of tuples (a <i>package</i>) in a relational database that satisfy linear 
+                        constraints and maximize or minimize a linear objective function. While previous work has developed 
+                        efficient algorithms for these <i>package queries</i> 
+                        <a href="https://people.cs.umass.edu/~ameli/projects/packageBuilder/papers/p108-brucato.pdf" target="_blank">[1]</a>, 
+                        challenges remain in scaling and adapting to dynamic, streaming environments.
+                    </p>
                     <p>
-            Decision-makers in various domains, such as finance, transportation, manufacturing, and healthcare, 
-            often need to make optimal decisions based on constraints and objectives. Many such problems can be 
-            solved by selecting a set of tuples (a <i>package</i>) in a relational database that satisfy linear 
-            constraints and maximize or minimize a linear objective function. While previous work has developed 
-            efficient algorithms for these <i>package queries</i>, challenges remain in scaling and adapting 
-            to dynamic, streaming environments.
-        </p>
-        <p>
-            This paper introduces a framework that leverages the <i>Reduced Representation Hypothesis</i>, 
-            suggesting that a subset of data points can achieve the same optimization goals as the full dataset. 
-            Using a Multiple Layer Skyline (MLS) approach, we construct reduced representations, capturing key 
-            candidates while reducing computational costs. We also introduce Incremental Package Maintenance (IPM) 
-            algorithms to efficiently update solutions in dynamic streaming settings.
-        </p>
-        <p>
-            Our approach avoids costly recomputation, scales efficiently, and preserves near-optimal results by 
-            incrementally integrating new data. Experiments show up to a 7x improvement in query execution time 
-            for large datasets, demonstrating scalability and practical effectiveness. These contributions advance 
-            dynamic package queries in data management and optimization.
-        </p>
-        <p>[1] Scalable computation of high-order optimization queries, M.Brucato, A.Abouzied, A.Meliou (2019)</p>
-   
+                        This paper introduces a framework that leverages the <i>Reduced Representation Hypothesis</i>, 
+                        suggesting that a subset of data points can achieve the same optimization goals as the full dataset. 
+                        Using a Multiple Layer Skyline (MLS) approach, we construct reduced representations, capturing key 
+                        candidates while reducing computational costs. We also introduce Incremental Package Maintenance (IPM) 
+                        algorithms to efficiently update solutions in dynamic streaming settings.
+                    </p>
+                    <p>
+                        Our approach avoids costly recomputation, scales efficiently, and preserves near-optimal results by 
+                        incrementally integrating new data. Experiments show up to a 7x improvement in query execution time 
+                        for large datasets, demonstrating scalability and practical effectiveness. These contributions advance 
+                        dynamic package queries in data management and optimization.
+                    </p>
+                    <p>[1] <a href="https://people.cs.umass.edu/~ameli/projects/packageBuilder/papers/p108-brucato.pdf" target="_blank">
+                        Scalable computation of high-order optimization queries, M.Brucato, A.Abouzied, A.Meliou (2019)</a>
                     </p>
                 </div>
             </div>
@@ -183,7 +184,7 @@
 </section>
 <!-- End paper abstract -->
 <!-- <embed src="documents/NEDB%20Poster.pdf" width="100%" height="auto"/> -->
-<embed src="documents/NEDB%20Poster.pdf" width="100%" height="800px"/>
+<embed src="documents/NEDB%20Poster.pdf" width="100%" height="1100px"/>
 <!--&lt;!&ndash; Image carousel &ndash;&gt;-->
 <!--<section class="hero is-small">-->
 <!--    <div class="hero-body">-->
