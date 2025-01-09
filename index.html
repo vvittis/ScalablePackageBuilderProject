@@ -153,16 +153,11 @@
                 <h2 class="title is-3">Abstract</h2>
                 <div class="content has-text-justified">
                     <p>
-                        Decision makers in a broad range of domains, such as finance, transportation, manufacturing, and healthcare,
-                        often need to derive optimal decisions given a set of constraints and objectives. For many important problems, this decision making process can be formulated as selecting a set
-                        of tuples (a package) in a relational database that collectively satisfy a set of linear constraints and maximize or minimize a linear objective function. Prior work [1] has
-                        developed efficient algorithms for solving such “package queries”. Our research focuses on incremental maintenance of package-query solutions under a stream of data insertions.
-                        In this dynamic setting, naively recomputing a package from scratch, when small delta changes are present, makes maintaining results up-to-date computationally tedious and
-                        prohibitively expensive for real-time and near-real-time applications. Our preliminary work contributes two baseline Incremental Package Maintenance (IPM) algorithms,
-                        approaching the problem both greedily (Greedy IPM) and heuristically, based on prior solutions (Accumulative IPM). Initial experimental results show orders-of-magnitude greater
-                        runtime performance in large datasets relative to naive recomputation, while maintaining an experimentally robust approximation bound on the quality of the solution.
-                        We intend to extend our results to further improve on our baseline algorithms as well as to handle data deletions and changes in the package query itself.
+                        Decision-makers in a broad range of domains, such as finance, transportation, manufacturing, and healthcare, often need to derive \emph{optimal} decisions given a set of \emph{constraints} and \emph{objectives}. For many important problems, this decision-making process can be formulated as selecting a set of tuples (a \textit{package}) in a relational database that collectively satisfy a set of linear constraints and maximize or minimize a linear objective function. Prior work has developed efficient algorithms for solving such \textit{package queries}, but scalability and adaptability to dynamic, streaming environments remain significant challenges.
 
+This paper introduces a novel framework for addressing these challenges by leveraging the \textit{Reduced Representation Hypothesis}, which posits that a subset of data points can achieve the same optimization objectives and constraints as the full dataset. We propose a Multiple Layer Skyline (MLS) approach to construct these reduced representations, capturing the most promising candidates while significantly reducing computational overhead. Furthermore, we extend this framework with Incremental Package Maintenance (IPM) algorithms to efficiently adapt package solutions in streaming settings, where data is updated dynamically.
+
+Our approach ensures scalability and efficiency, avoiding costly recomputation by incrementally integrating new data while preserving near-optimal results. Experimental validation demonstrates the effectiveness of our method, achieving up to a 7x improvement in query execution time with large datasets, while retaining the feasibility and optimality of solutions. These contributions provide a robust and practical solution for dynamic package queries, advancing the state of the art in data management and optimization. 
                         <br>
                         <br>
                         [1] Scalable computation of high-order optimization queries, M.Brucato, A.Abouzied, A.Meliou (2019)
@@ -173,8 +168,8 @@
     </div>
 </section>
 <!-- End paper abstract -->
-<embed src="documents/NEDB%20Poster.pdf" width="100%" height="auto"/>
-
+<!-- <embed src="documents/NEDB%20Poster.pdf" width="100%" height="auto"/> -->
+<embed src="documents/NEDB%20Poster.pdf" width="100%" height="800px"/>
 <!--&lt;!&ndash; Image carousel &ndash;&gt;-->
 <!--<section class="hero is-small">-->
 <!--    <div class="hero-body">-->
