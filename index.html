@@ -153,14 +153,28 @@
                 <h2 class="title is-3">Abstract</h2>
                 <div class="content has-text-justified">
                     <p>
-                        Decision-makers in a broad range of domains, such as finance, transportation, manufacturing, and healthcare, often need to derive \emph{optimal} decisions given a set of \emph{constraints} and \emph{objectives}. For many important problems, this decision-making process can be formulated as selecting a set of tuples (a \textit{package}) in a relational database that collectively satisfy a set of linear constraints and maximize or minimize a linear objective function. Prior work has developed efficient algorithms for solving such \textit{package queries}, but scalability and adaptability to dynamic, streaming environments remain significant challenges.
-
-This paper introduces a novel framework for addressing these challenges by leveraging the \textit{Reduced Representation Hypothesis}, which posits that a subset of data points can achieve the same optimization objectives and constraints as the full dataset. We propose a Multiple Layer Skyline (MLS) approach to construct these reduced representations, capturing the most promising candidates while significantly reducing computational overhead. Furthermore, we extend this framework with Incremental Package Maintenance (IPM) algorithms to efficiently adapt package solutions in streaming settings, where data is updated dynamically.
-
-Our approach ensures scalability and efficiency, avoiding costly recomputation by incrementally integrating new data while preserving near-optimal results. Experimental validation demonstrates the effectiveness of our method, achieving up to a 7x improvement in query execution time with large datasets, while retaining the feasibility and optimality of solutions. These contributions provide a robust and practical solution for dynamic package queries, advancing the state of the art in data management and optimization. 
-                        <br>
-                        <br>
-                        [1] Scalable computation of high-order optimization queries, M.Brucato, A.Abouzied, A.Meliou (2019)
+            Decision-makers in various domains, such as finance, transportation, manufacturing, and healthcare, 
+            often need to make optimal decisions based on constraints and objectives. Many such problems can be 
+            solved by selecting a set of tuples (a <i>package</i>) in a relational database that satisfy linear 
+            constraints and maximize or minimize a linear objective function. While previous work has developed 
+            efficient algorithms for these <i>package queries</i>, challenges remain in scaling and adapting 
+            to dynamic, streaming environments.
+        </p>
+        <p>
+            This paper introduces a framework that leverages the <i>Reduced Representation Hypothesis</i>, 
+            suggesting that a subset of data points can achieve the same optimization goals as the full dataset. 
+            Using a Multiple Layer Skyline (MLS) approach, we construct reduced representations, capturing key 
+            candidates while reducing computational costs. We also introduce Incremental Package Maintenance (IPM) 
+            algorithms to efficiently update solutions in dynamic streaming settings.
+        </p>
+        <p>
+            Our approach avoids costly recomputation, scales efficiently, and preserves near-optimal results by 
+            incrementally integrating new data. Experiments show up to a 7x improvement in query execution time 
+            for large datasets, demonstrating scalability and practical effectiveness. These contributions advance 
+            dynamic package queries in data management and optimization.
+        </p>
+        <p>[1] Scalable computation of high-order optimization queries, M.Brucato, A.Abouzied, A.Meliou (2019)</p>
+   
                     </p>
                 </div>
             </div>
